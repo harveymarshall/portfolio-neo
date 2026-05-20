@@ -3,36 +3,25 @@ const PROJECTS: {
   description: string
   previewImage: string
   repoUrl: string
-  liveLink: string
 }[] = [
-  {
-    name: 'Project 1',
-    description: 'Lorem ipsum dolor sit amet',
-    liveLink: 'https://google.com',
-    previewImage: '/project1.png',
-    repoUrl: 'https://github.com',
-  },
-  {
-    name: 'Project 2',
-    description: 'Lorem ipsum dolor sit amet',
-    liveLink: 'https://google.com',
-    previewImage: '/project2.png',
-    repoUrl: 'https://github.com',
-  },
-  {
-    name: 'Project 3',
-    description: 'Lorem ipsum dolor sit amet',
-    liveLink: 'https://google.com',
-    previewImage: '/project3.png',
-    repoUrl: 'https://github.com',
-  },
-  {
-    name: 'Project 4',
-    description: 'Lorem ipsum dolor sit amet',
-    liveLink: 'https://google.com',
-    previewImage: '/project4.png',
-    repoUrl: 'https://github.com',
-  },
-]
+    {
+      name: 'Airflow Dag Factory',
+      description: 'A project built to obfuscate python code away from building apache airflow dags. This tool allows pipelines to be built using YAML config files. Those files are then used to build and deploy the pipelines to an apache airflow instance.',
+      previewImage: '/project1.png',
+      repoUrl: 'https://github.com/harveymarshall/airflow-dag-factory',
+    },
+    {
+      name: 'Azure Blob Storage MCP Server',
+      description: 'This project provides an MCP server for interacting with Azure Blob Storage using the MCP protocol. You can connect this server to clients like Claude Desktop for natural language access to your Azure Blob Storage resources.',
+      previewImage: '/project2.png',
+      repoUrl: 'https://github.com/harveymarshall/azure-blob-storage-mcp-server',
+    },
+    {
+      name: 'Data Cleaning Agent',
+      description: 'AI Agent that takes a raw dataset and recommends steps for cleaning the data based on User context provided to the Agent.',
+      previewImage: '/project3.png',
+      repoUrl: 'https://github.com/harveymarshall/data_cleaning_agent',
+    },
+  ]
 
 export default PROJECTS

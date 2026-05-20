@@ -10,19 +10,19 @@ export default function Links() {
   const links: { icon: IconType; href: string }[] = [
     {
       icon: SiGmail,
-      href: 'mailto:johndoe@gmail.com',
+      href: 'mailto:dev.marshallharvey@gmail.com',
     },
     {
       icon: SiGithub,
-      href: 'https://github.com/johndoe',
+      href: 'https://github.com/harveymarshall',
     },
     {
       icon: SiLinkedin,
-      href: 'https://www.linkedin.com/in/johndoe/',
+      href: 'https://www.linkedin.com/in/harvey-marshall-827531160/',
     },
     {
       icon: SiMedium,
-      href: 'https://medium.com/@johndoe',
+      href: 'https://medium.com/@dev.marshallharvey',
     },
   ]
 
