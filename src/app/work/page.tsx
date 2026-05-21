@@ -1,5 +1,4 @@
 import PROJECTS from '@/data/projects'
-import { AspectRatio } from '@/components/ui/aspect-ratio'
 
 export default function Work() {
   return (
@@ -15,7 +14,10 @@ export default function Work() {
             >
 
               <div className="text-main-foreground font-base mt-5">
-                <h2 className="font-heading text-xl sm:text-2xl">
+
+                <project.project_icon className="h-20 w-20 " />
+
+                <h2 className="mt-5 font-heading text-xl sm:text-2xl">
                   {project.name}
                 </h2>
 
