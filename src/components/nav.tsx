@@ -18,8 +18,8 @@ export default function Nav() {
       text: 'About',
     },
     {
-      path: '/work',
-      text: 'Work',
+      path: '/projects',
+      text: 'Projects',
     },
   ]
 
