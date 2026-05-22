@@ -31,6 +31,16 @@ export default function Work() {
                   >
                     Github
                   </a>
+                  <div className="grid grid-cols-5 items-center justify-items-center gap-0">
+                    {project.skills_used.map((SkillIcon, index) => (
+                      <span
+                        key={index}
+                        className="rounded-base border-border border-2 bg-secondary-background p-1 text-foreground shadow-shadow w-fit"
+                      >
+                        <SkillIcon />
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
