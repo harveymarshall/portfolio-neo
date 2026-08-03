@@ -5,19 +5,17 @@ export default function Projects() {
     <div>
       <h1 className="font-heading mb-8 text-2xl sm:text-4xl">Projects</h1>
 
-      <div className="flex flex-col gap-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         {PROJECTS.map((project, id) => {
           return (
             <div
-              className="border-border shadow-shadow rounded-base bg-main border-2 p-4 sm:p-5"
+              className="border-border shadow-shadow rounded-base bg-secondary-background border-2 p-4 sm:p-5"
               key={id}
             >
+              <div className="text-foreground font-base mt-5">
+                <project.icon className="text-main h-16 w-16" />
 
-              <div className="text-main-foreground font-base mt-5">
-
-                <project.project_icon className="h-20 w-20 " />
-
-                <h2 className="mt-5 font-heading text-xl sm:text-2xl">
+                <h2 className="font-heading mt-5 text-xl sm:text-2xl">
                   {project.name}
                 </h2>
 
@@ -25,17 +23,17 @@ export default function Projects() {
 
                 <div className="mt-8 grid grid-cols-2 gap-5">
                   <a
-                    className="border-border bg-secondary-background text-foreground shadow-shadow rounded-base font-base hover:translate-x-boxShadowX hover:translate-y-boxShadowY cursor-pointer border-2 px-4 py-2 text-center text-sm transition-all hover:shadow-none sm:text-base"
+                    className="border-border bg-main text-main-foreground shadow-shadow rounded-base font-base hover:translate-x-boxShadowX hover:translate-y-boxShadowY cursor-pointer border-2 px-4 py-2 text-center text-sm transition-all hover:shadow-none sm:text-base"
                     href={project.repoUrl}
                     target="_blank"
                   >
                     Github
                   </a>
                   <div className="grid grid-cols-5 items-center justify-items-center gap-0">
-                    {project.skills_used.map((SkillIcon, index) => (
+                    {project.skillsUsed.map((SkillIcon, index) => (
                       <span
                         key={index}
-                        className="rounded-base border-border border-2 bg-secondary-background p-1 text-foreground shadow-shadow w-fit"
+                        className="rounded-base border-border bg-background text-foreground shadow-shadow w-fit border-2 p-1"
                       >
                         <SkillIcon />
                       </span>

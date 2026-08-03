@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes'
 
 import * as React from 'react'
 
-export function ThemeSwitcher() {
+export default function ThemeSwitcher() {
   const { setTheme, theme } = useTheme()
 
   return (
