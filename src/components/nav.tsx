@@ -3,7 +3,7 @@
 import { Link } from 'next-view-transitions'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
-import { ThemeSwitcher } from './theme-switcher'
+import ThemeSwitcher from './theme-switcher'
 
 export default function Nav() {
   const path = usePathname()

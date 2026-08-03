@@ -13,48 +13,50 @@ import {
   SiTypescript,
   SiGooglecloud,
   SiAmazonaws,
-  SiMicrosoftazure
-
+  SiMicrosoftazure,
 } from '@icons-pack/react-simple-icons'
 
-const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
-  [
-    {
-      field: 'Data Engineering',
-      skills: [
-        { skill: 'python', icon: SiPython },
-        { skill: 'sql', icon: SiSqlite },
-        { skill: 'bigquery', icon: SiGooglebigquery },
-        { skill: 'airflow', icon: SiApacheairflow },
-        { skill: 'graphql', icon: SiGraphql },
-        { skill: 'kafka', icon: SiApachekafka }
-      ],
-    },
-    {
-      field: 'Full Stack Development',
-      skills: [
-        { skill: 'javascript', icon: SiJavascript },
-        { skill: 'react', icon: SiReact },
-        {
-          skill: 'nodejs',
-          icon: SiNodedotjs,
-        },
-        {
-          skill: 'docker',
-          icon: SiDocker,
-        },
-        { skill: 'typescript', icon: SiTypescript }
+export type SkillGroup = {
+  field: string
+  skills: { skill: string; icon: IconType }[]
+}
 
-      ],
-    },
-    {
-      field: 'Cloud Development',
-      skills: [
-        { skill: 'gcp', icon: SiGooglecloud },
-        { skill: 'aws', icon: SiAmazonaws },
-        { skill: 'azure', icon: SiMicrosoftazure }
-      ]
-    },
-  ]
+const SKILLS: SkillGroup[] = [
+  {
+    field: 'Data Engineering',
+    skills: [
+      { skill: 'python', icon: SiPython },
+      { skill: 'sql', icon: SiSqlite },
+      { skill: 'bigquery', icon: SiGooglebigquery },
+      { skill: 'airflow', icon: SiApacheairflow },
+      { skill: 'graphql', icon: SiGraphql },
+      { skill: 'kafka', icon: SiApachekafka },
+    ],
+  },
+  {
+    field: 'Full Stack Development',
+    skills: [
+      { skill: 'javascript', icon: SiJavascript },
+      { skill: 'react', icon: SiReact },
+      {
+        skill: 'nodejs',
+        icon: SiNodedotjs,
+      },
+      {
+        skill: 'docker',
+        icon: SiDocker,
+      },
+      { skill: 'typescript', icon: SiTypescript },
+    ],
+  },
+  {
+    field: 'Cloud Development',
+    skills: [
+      { skill: 'gcp', icon: SiGooglecloud },
+      { skill: 'aws', icon: SiAmazonaws },
+      { skill: 'azure', icon: SiMicrosoftazure },
+    ],
+  },
+]
 
 export default SKILLS
